@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* outline: 1px solid red; */
+}
+
+body {
+    /* background-color: black; */
+    font-family: "Poppins";
+}
+
+.nav-1 {
+    width: 100vw;
+    background-color: #f1f1f1;
+    height: 7rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-1 .container {
+    width: 60vw;
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-1 .container .logo {
+    height: 80%;
+    padding-right: 1rem;
+    object-fit: contain;
+}
+
+.nav-1 .container .details {
+    display: flex;
+    margin-left: 1rem;
+    height: 70%;
+    gap: 1rem;
+    flex: 1;
+}
+
+.nav-1 .container .details .detail {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex: 1;
+}
+
+.nav-1 .container .details .detail .icon {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 50%;
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-1 .container .details .detail .icon svg {
+    fill: #ffa500;
+}
+
+.nav-1 .container .details .detail .content {
+    font-size: .7rem;
+}
+
+/* Nav - 2 */
+
+.nav-2 {
+    width: 100;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-2 .container {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-2 ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.nav-2 ul a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.nav-2 .container button {
+    height: fit-content;
+    padding: .8rem 1rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    background-color: #f5526d;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+    color: white;
+    font-weight: 600;
+}
+
+section.works {
+    width: 100vw;
+}
+
+section.works .work-1 {
+    height: 30rem;
+    background-image: url(./images/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section.works .work-1 .bg-color {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0a0a3f;
+    opacity: .8;
+}
+
+section.works .work-1 .container {
+    position: relative;
+    z-index: 1;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section.works .work-1 .container .head-1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4c51d9;
+}
+
+section.works .work-1 .container .head-2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+section.works .work-1 .container .head-3 {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #ffa500;
+    text-transform: uppercase;
+}
+
+section.works .work-1 .container button {
+    width: fit-content;
+    padding: .7rem 1rem;
+    background-color: #f5526d;
+    border: none;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border-radius: 5rem;
+}
+
+section.works .work-2 {
+    position: relative;
+    top: -2rem;
+    display: flex;
+    justify-content: center;
+}
+
+section.works .work-2 .container {
+    width: 60vw;
+    background-color: black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.works .work-2 .container .card {
+    height: 100%;
+    padding: 0 1rem;
+}
+
+section.works .work-2 .container .card:nth-child(odd) {
+    background-color: #31328f;
+}
+
+section.works .work-2 .container .card:nth-child(even) {
+    background-color: #3669f6;
+}
+
+section.works .work-2 .container .card .icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+section.works .work-2 .container .card .icon svg {
+    height: 4rem;
+    width: 4rem;
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+section.works .work-2 .container .card:nth-child(odd) .icon svg {
+    fill: white;
+    background-color: #3669f6;
+}
+
+section.works .work-2 .container .card:nth-child(even) .icon svg {
+    fill: white;
+    background-color: #31328f;
+}
+
+section.works .work-2 .container .card .head {
+    color: #ffa500;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+section.works .work-2 .container .card .content {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: .7rem;
+    margin-top: .5rem;
+    line-height: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+/* section-2 */
+
+section.learn-aboutus {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+
+}
+
+section.learn-aboutus .container {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    /* height: 25rem; */
+
+    
+}
+
+section.learn-aboutus .container .contant {
+    margin-left: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+section.learn-aboutus .container .contant .head-1 {
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 1rem;
+
+}
+
+section.learn-aboutus .container img {
+    width:45%;
+    object-fit: cover;
+    /* height: 25rem; */
+
+}
+
+section.learn-aboutus .container .contant .head-2 {
+    color: #0637be;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+section.learn-aboutus .container .head-3 {
+    font-size: small;
+    margin-bottom: 1rem;
+}
+
+section.learn-aboutus .container .contant .head-3 p {
+    line-height: 1.7;
+    margin-bottom: .5rem;
+    font-weight: 300;
+    font-size: .7rem;
+
+}
+
+section.learn-aboutus .container button {
+    width: fit-content;
+    padding: .7rem 1rem;
+    background-color: #f5526d;
+    border: none;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border-radius: 5rem;
+    font-size: .7rem;
+}
+
+/* section-3 */
+
+section.enquires {
+    background-color: #31328f;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+section.enquires .container {
+    width: 60vw;
+    padding: 3rem 0;
+
+}
+
+section.enquires .container .head-1 {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: .6rem;
+}
+
+section.enquires .container .head-2 {
+    color: #ffffff;
+    font-size: .7rem;
+    padding-bottom: .5rem;
+}
+
+section.enquires .container button {
+    width: fit-content;
+    padding: .7rem 1rem;
+    background-color: #f5526d;
+    border: none;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border-radius: 5rem;
+    font-size: .7rem;
+}
+
+/* section-4 */
+section.choose-us{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+section.choose-us .container{
+    width: 60vw;
+
+}
+section.choose-us .container .head-1{
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+section.choose-us .container .head-2{
+    color: #0637be;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+section.choose-us .container .head-3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9rem;
+}
+
+/* section-5 */
+
+section.patients{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+section.patients  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-top: 2rem; */
+    width: 60vw;
+    /* background-col   or: red; */
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+
+section.patients .container .patient{
+display: flex;
+}
+section.patients .container .patient svg{
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: .3rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0637be;
+    fill: #0637be;
+    margin-right: .5rem;
+
+}
+
+section.patients .container .patient .contant .head-1{
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+section.patients .container .patient .contant .head-2{
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: .8rem;
+}
+
+/* section-6 */
+section.services{
+    background-color: rgba(202, 202, 202, 0.444);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+section.services .contant{
+width: 90vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1.8rem 0;
+
+
+
+}
+section.services .container{
+    width: 60vw;
+}
+section.services .container .head-1{
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+}
+
+section.services .container .head-2{
+    color: #0637be;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+section.services .container .head-3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.5;
+
+}
+
+section.services .contant .boxs {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    
+}
+section.services .contant .boxs .box {
+    background-color:#31328f;
+    border-radius: 1rem;
+    padding: 1.3rem 1rem;
+}
+section.services .contant .boxs .box .logo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+section.services .contant .boxs .box .logo svg{
+    height: 3rem;
+    width: 3rem;
+    fill:white ;
+    padding: .4rem;
+    border: 1px solid white;
+    
+}
+section.services .contant .boxs .box .logo p{
+    text-transform: capitalize;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 600;
+    margin-bottom: .3rem;
+    font-size: 1rem;
+}
+section.services .contant .boxs .box .para{
+    font-size: .7rem;
+    color: #ffffff;
+}
+
+/* section-7 */
+
+
+section.products{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+section.products .container{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+section.products .container .contant .head-1{
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+
+}
+section.products .container .contant .head-2{
+    color: #0637be;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+section.products .container .contant .head-3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5;
+
+}
+section.products .container .boxes{
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+section.products .container .boxes .box img{
+width: 100%;
+height: auto;
+aspect-ratio: 1/1;
+}
+
+section.products .container .boxes .box .contant .head-1{
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+section.products .container .boxes .box .contant .head-2{
+    color: #0637be;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    line-height: 1;
+}
+section.products .container .boxes .box .contant .head-3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9rem;
+    line-height: 1;
+}
+
+/* section-8 */
+
+section.review{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+section.review .container{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+section.review .container .contant{
+  width: 60vw;
+}
+section.review .container .contant .head-1{
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+section.review .container .contant .head-2{
+    color: #0637be;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: .7rem;
+    line-height: 1;
+}
+section.review .container .contant .head-3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+section.review .container .box{
+    background: linear-gradient(180deg, rgba(0, 255, 216, 1) 0%, rgba(0, 255, 44, 1) 100%);
+padding: 1.5rem 1rem;
+width: 50vw;
+
+}
+section.review .container .box .head-1{
+    text-align: justify;
+    text-wrap: balance;
+    font-family: "Poppins";
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    
+}
+section.review .container .box .head-2{
+    text-align: justify;
+    text-wrap: balance;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0637be;
+    padding-top: .4rem;
+
+}
+section.review .container .box .head-3{
+    text-align: justify;
+            text-wrap: balance;
+            font-family: "Poppins";
+            font-size: .9rem;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.9);
+            margin-top: .5rem;
+}
+
+  /* section-9 */
+
+  section.brands {
+    display: flex;
+    width: 100vw;
+    padding: 3rem 0;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.17);
+    margin-bottom: 2rem;
+}
+section.brands .content{
+    width: 60vw;
+}
+section.brands .content .head-1{
+    text-transform: uppercase;
+    color: rgb(226, 135, 16);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+section.brands .content .head-2{
+    color: #0637be;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: .7rem;
+    line-height: 1;
+}
+ 
+section.brands .logos{
+    width: 60vw;
+    margin-top: 2rem;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+section.brands .logos .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+section.brands .logos .logo img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+
+
+
+
+
+  /* footer--1 */
+
+footer{
+    background: linear-gradient(180deg, rgba(0, 255, 216, 1) 0%, rgba(0, 255, 44, 1) 100%);
+    padding: 1.5rem 1rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+footer .container{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 0;
+    align-items: center;
+}
+footer .container .logo p{
+    font-size: .8rem;
+    color: #ffffff;
+}
+
+/* footer .container .navbar{} */
+footer .container .navbar .contant{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+footer .container .navbar .footer-ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: #ffffff;
+}
+
+footer .container .details{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    
+}
+
+footer .container .details .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+footer .container .details h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+footer .container .details .logo .content{
+color: #ffffff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+}
+footer .container .details .logo svg{
+    fill: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
